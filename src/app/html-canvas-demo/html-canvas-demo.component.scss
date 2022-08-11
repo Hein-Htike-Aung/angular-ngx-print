@@ -1,0 +1,47 @@
+.content {
+
+    padding: 100px;
+
+    .contentTop {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+  
+    .table {
+      max-width: 2480px;
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    
+      .header {
+        padding: 10px;
+        th {
+          padding: 5px;
+          text-align: start;
+          width: auto;
+          overflow: hidden;
+          word-wrap: break-word;
+          color: green;
+        }
+      }
+    
+      tbody {
+        tr {
+          border-bottom: 1px solid black;
+          td {
+            padding: 5px;
+            width: auto;
+            overflow: hidden;
+            word-wrap: break-word;
+          }
+    
+          &:hover {
+            background-color: #aaa;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    
+  }

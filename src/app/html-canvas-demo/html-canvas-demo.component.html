@@ -1,21 +1,13 @@
-<button
-  printTitle="Names Tables"
-  [useExistingCss]="true"
-  printSectionId="content"
-  ngxPrint
->
-  <!-- another css file -->
-  <!-- styleSheetFile="assets/pdf.css" -->
-  Preview ngx PDF
-</button>
+<button (click)="generatePDF()">Download canvas PDF</button>
 
-<div id="content">
+<div id="contentToConvert">
   <div class="content">
     <div class="contentTop">
       <span>Name: Hein Htike</span>
       <span>Age: 33</span>
       <span>Status: Pro</span>
     </div>
+
     <table class="table">
       <thead>
         <tr class="header">
